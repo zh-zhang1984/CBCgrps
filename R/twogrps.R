@@ -21,7 +21,7 @@
 #'
 #' @return Table
 #'
-#' @examples twogrps(dt,gvar="mort")
+#' @examples    twogrps(dt,gvar="mort")
 #'
 #' @export twogrps
 
