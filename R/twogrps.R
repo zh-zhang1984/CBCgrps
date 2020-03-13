@@ -21,7 +21,7 @@
 #'
 #' @return Table
 #'
-#' @examples    twogrps(dt,gvar="mort")
+#' @examples twogrps(dt,gvar="mort")
 #'
 #' @export twogrps
 
@@ -37,6 +37,8 @@ twogrps <-
            minfactorlevels=10,
            sim = FALSE,#to use simulated p value
            workspace=2e5,ShowStatistic = F,ExtractP = 0.05){
+    #df must be a data.frame object; tibble is not allowed
+    df <- data.frame(df)
     ##group varibale must be a factor
     df[,gvar]<-as.factor(df[,gvar])
     if(length(table(df[,gvar]))>2){

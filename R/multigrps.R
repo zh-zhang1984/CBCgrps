@@ -10,6 +10,8 @@ multigrps <-
            minfactorlevels=10,
            sim=FALSE,
            workspace=2e5,ShowStatistic = F){
+    #df must be a data.frame object; tibble is not allowed
+    df <- data.frame(df)
     ##group varibale must be a factor
     df[,gvar]<-as.factor(df[,gvar])
     #NaN is forced to be NA, NaN can cause problem

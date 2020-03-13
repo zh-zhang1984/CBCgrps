@@ -15,7 +15,7 @@ twogrps(df, gvar, varlist = NULL, p.rd = 3,
 }
 \arguments{
   \item{df}{
-The data frame on which statistical descroption and inference are performed.
+The data frame on which statistical descroption and inference are performed. df can be tibble, matrix or data.frame object.
 }
   \item{gvar}{
 The group variable.
